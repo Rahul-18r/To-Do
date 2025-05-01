@@ -34,24 +34,19 @@ You can download the necessary software from:
 
 2. Navigate to the project directory:
    ```bash
-   cd To-Do
+   cd To-Do-App
    ```
 
 ## Running the Application
 
 ### Running the Backend (Spring Boot)
 
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
-
-2. Install dependencies (if needed):
+1. From the root directory:
    ```bash
    mvn install
    ```
 
-3. Run the backend using Maven:
+2. Run the backend using Maven:
    ```bash
    mvn spring-boot:run
    ```
@@ -65,7 +60,7 @@ http://localhost:8080
 
 1. Navigate to the frontend directory:
    ```bash
-   cd ../todo-app-frontend
+   cd todo-app-frontend
    ```
 
 2. Install the dependencies using npm:
@@ -100,12 +95,10 @@ The backend provides the following RESTful API endpoints:
 
 ## Project Structure
 
-The project is organized into two main components:
-
 ### 1. Backend (Spring Boot)
 
 ```
-To-Do-App [To-Do]/
+To-Do-App/
 ├── src/
 │   ├── main/
 │   │   ├── java/
@@ -122,7 +115,7 @@ To-Do-App [To-Do]/
 │   │   │       ├── repository/
 │   │   │       │   └── TaskRepository.java
 │   │   │       ├── Service/
-│   │   │       └── ToDoApplication.java
+│   │   │       └── DemoApplication.java
 │   │   └── resources/
 │   └── test/
 └── target/
