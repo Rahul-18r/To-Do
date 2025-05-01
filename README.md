@@ -105,18 +105,27 @@ The project is organized into two main components:
 ### 1. Backend (Spring Boot)
 
 ```
-backend/
+To-Do-App [To-Do]/
 ├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── todo_app/
-│   │   │           ├── controllers/
-│   │   │           ├── models/
-│   │   │           └── services/
+│   │   │   └── com.todo_app/
+│   │   │       ├── Configuration/
+│   │   │       │   └── WebConfig.java
+│   │   │       ├── Controller/
+│   │   │       │   └── TaskController.java
+│   │   │       ├── exception/
+│   │   │       │   ├── GlobalExceptionHandler.java
+│   │   │       │   └── UserExceptionHandler.java
+│   │   │       ├── model/
+│   │   │       │   └── Task.java
+│   │   │       ├── repository/
+│   │   │       │   └── TaskRepository.java
+│   │   │       ├── Service/
+│   │   │       └── ToDoApplication.java
 │   │   └── resources/
-│   │       └── application.properties
-└── pom.xml
+│   └── test/
+└── target/
 ```
 
 ### 2. Frontend (React)
@@ -124,6 +133,7 @@ backend/
 ```
 todo-app-frontend/
 ├── public/
+│   └── index.html
 ├── src/
 │   ├── components/
 │   │   ├── AddTask.js
@@ -133,7 +143,8 @@ todo-app-frontend/
 │   ├── App.js
 │   ├── index.js
 │   └── styles.css
-└── package.json
+├── package.json
+└── package-lock.json
 ```
 
 ---
