@@ -1,104 +1,141 @@
-To-Do App
-This is a full-stack To-Do application built using React for the frontend and Spring Boot (Java) for the backend. Users can manage tasks by adding, editing, and deleting them. This project also integrates both frontend and backend, so you can run it as a full-stack application.
+# To-Do App
 
-Table of Contents
-Prerequisites
+This is a full-stack To-Do application built using **React** for the frontend and **Spring Boot (Java)** for the backend. Users can manage tasks by adding, editing, and deleting them. This project integrates both frontend and backend components to function as a complete application.
 
-Running the Backend
+## Table of Contents
 
-Running the Frontend
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+  - [Backend (Spring Boot)](#running-the-backend-spring-boot)
+  - [Frontend (React)](#running-the-frontend-react)
+- [API Endpoints](#api-endpoints)
+- [Project Structure](#project-structure)
 
-API Endpoints
+## Prerequisites
 
-Project Structure
+Before you begin, ensure you have the following installed:
 
-Contributing
-
-Prerequisites
-Before you begin, make sure you have the following installed:
-
-Java 11 or later (for Spring Boot backend)
-
-Node.js and npm (for React frontend)
-
-Maven (for managing Java dependencies)
+- **Java 11 or later** (for Spring Boot backend)
+- **Node.js** and **npm** (for React frontend)
+- **Maven** (for managing Java dependencies)
 
 You can download the necessary software from:
+- [Java 11+](https://adoptopenjdk.net/)
+- [Node.js](https://nodejs.org/)
+- [Maven](https://maven.apache.org/)
 
-Java 11+
+## Installation
 
-Node.js
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Rahul-18r/To-Do.git
+   ```
 
-Maven
+2. Navigate to the project directory:
+   ```bash
+   cd To-Do
+   ```
 
-Running the Backend (Spring Boot)
-Clone the repository: git clone https://github.com/Rahul-18r/To-Do.git
+## Running the Application
 
-Navigate to the backend directory: cd To-Do/backend
+### Running the Backend (Spring Boot)
 
-Install dependencies (if needed): mvn install
+1. Navigate to the backend directory:
+   ```bash
+   cd backend
+   ```
 
-Run the backend using Maven: mvn spring-boot:run
+2. Install dependencies (if needed):
+   ```bash
+   mvn install
+   ```
 
-This will start the Spring Boot server, which will be available at: http://localhost:8080
+3. Run the backend using Maven:
+   ```bash
+   mvn spring-boot:run
+   ```
 
-Running the Frontend (React)
-Navigate to the frontend directory: cd To-Do/todo-app-frontend
+The Spring Boot server will start and be available at:
+```
+http://localhost:8080
+```
 
-Install the dependencies using npm: npm install
+### Running the Frontend (React)
 
-Start the React development server: npm start
+1. Navigate to the frontend directory:
+   ```bash
+   cd ../todo-app-frontend
+   ```
 
-This will start the React app, which will be available at: http://localhost:3000
+2. Install the dependencies using npm:
+   ```bash
+   npm install
+   ```
 
-Your application should now be running at both:
+3. Start the React development server:
+   ```bash
+   npm start
+   ```
 
-Backend: http://localhost:8080
+The React app will start and be available at:
+```
+http://localhost:3000
+```
 
-Frontend: http://localhost:3000
+Your application should now be running with:
+- Backend: http://localhost:8080
+- Frontend: http://localhost:3000
 
-API Endpoints
-You can interact with the backend through the following API endpoints:
+## API Endpoints
 
-GET /tasks: Fetch all tasks
+The backend provides the following RESTful API endpoints:
 
-POST /tasks: Create a new task
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET    | `/tasks` | Fetch all tasks |
+| POST   | `/tasks` | Create a new task |
+| PUT    | `/tasks/{id}` | Update an existing task |
+| DELETE | `/tasks/{id}` | Delete a task |
 
-PUT /tasks/{id}: Update an existing task
+## Project Structure
 
-DELETE /tasks/{id}: Delete a task
+The project is organized into two main components:
 
-Project Structure
-The project is divided into two main parts:
+### 1. Backend (Spring Boot)
 
-1. Backend (Spring Boot)
-src/main/java/com/todo_app: Contains Java files for the Spring Boot backend, including controllers and models.
+```
+backend/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── todo_app/
+│   │   │           ├── controllers/
+│   │   │           ├── models/
+│   │   │           └── services/
+│   │   └── resources/
+│   │       └── application.properties
+└── pom.xml
+```
 
-src/main/resources: Contains configuration files like application.properties.
+### 2. Frontend (React)
 
-pom.xml: The Maven configuration file for the backend.
+```
+todo-app-frontend/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── AddTask.js
+│   │   └── TaskList.js
+│   ├── services/
+│   │   └── api.js
+│   ├── App.js
+│   ├── index.js
+│   └── styles.css
+└── package.json
+```
 
-2. Frontend (React)
-todo-app-frontend/src: Contains the React app source code.
+---
 
-components: React components for managing tasks, such as AddTask.js and TaskList.js.
-
-services: The api.js file that handles HTTP requests to the backend.
-
-styles.css: Custom CSS for the app.
-
-todo-app-frontend/package.json: The npm configuration file for the frontend.
-
-Contributing
-Feel free to fork the project, submit issues, or create pull requests. Contributions are always welcome!
-
-Steps to Contribute:
-Fork the project on GitHub.
-
-Clone your fork to your local machine.
-
-Make your changes and push them to your fork.
-
-Create a pull request to merge your changes into the main repository.
-
-Thank you for checking out the project!
+*Created and maintained by [Rahul-18r](https://github.com/Rahul-18r)*
