@@ -1,75 +1,56 @@
-# To-Do App
+To-Do App
+This is a full-stack To-Do application built using React for the frontend and Spring Boot (Java) for the backend. Users can manage tasks by adding, editing, and deleting them. This project also integrates both frontend and backend, so you can run it as a full-stack application.
 
-This is a full-stack To-Do application built using **React** for the frontend and **Spring Boot (Java)** for the backend. Users can manage tasks by adding, editing, and deleting them. This project also integrates both frontend and backend, so you can run it as a full-stack application.
+Table of Contents
+Prerequisites
 
-## Table of Contents
-- [Prerequisites](#prerequisites)
-- [Running the Backend](#running-the-backend)
-- [Running the Frontend](#running-the-frontend)
-- [API Endpoints](#api-endpoints)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
+Running the Backend
 
-## Prerequisites
+Running the Frontend
 
+API Endpoints
+
+Project Structure
+
+Contributing
+
+Prerequisites
 Before you begin, make sure you have the following installed:
 
-1. **Java 11 or later** (for Spring Boot backend)
-2. **Node.js** and **npm** (for React frontend)
-3. **Maven** (for managing Java dependencies)
+Java 11 or later (for Spring Boot backend)
+
+Node.js and npm (for React frontend)
+
+Maven (for managing Java dependencies)
 
 You can download the necessary software from:
 
-- [Java 11+](https://adoptopenjdk.net/)
-- [Node.js](https://nodejs.org/)
-- [Maven](https://maven.apache.org/)
+Java 11+
 
-## Running the Backend (Spring Boot)
+Node.js
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Rahul-18r/To-Do.git
-Navigate to the backend directory:
+Maven
 
-bash
-Copy code
-cd To-Do/backend
-Install dependencies (if needed):
+Running the Backend (Spring Boot)
+Clone the repository: git clone https://github.com/Rahul-18r/To-Do.git
 
-bash
-Copy code
-mvn install
-Run the backend using Maven:
+Navigate to the backend directory: cd To-Do/backend
 
-bash
-Copy code
-mvn spring-boot:run
-This will start the Spring Boot server, which will be available at:
+Install dependencies (if needed): mvn install
 
-arduino
-Copy code
-http://localhost:8080
+Run the backend using Maven: mvn spring-boot:run
+
+This will start the Spring Boot server, which will be available at: http://localhost:8080
+
 Running the Frontend (React)
-Navigate to the frontend directory:
+Navigate to the frontend directory: cd To-Do/todo-app-frontend
 
-bash
-Copy code
-cd To-Do/todo-app-frontend
-Install the dependencies using npm:
+Install the dependencies using npm: npm install
 
-bash
-Copy code
-npm install
-Start the React development server:
+Start the React development server: npm start
 
-bash
-Copy code
-npm start
-This will start the React app, which will be available at:
+This will start the React app, which will be available at: http://localhost:3000
 
-arduino
-Copy code
-http://localhost:3000
 Your application should now be running at both:
 
 Backend: http://localhost:8080
@@ -121,26 +102,3 @@ Make your changes and push them to your fork.
 Create a pull request to merge your changes into the main repository.
 
 Thank you for checking out the project!
-
-markdown
-Copy code
-
-### **Instructions for Adding the `README.md` to Your Repository:**
-
-1. Create a new file named `README.md` in the root of your project.
-
-2. Copy the content from above into the `README.md` file.
-
-3. **Add the `README.md` file** to your Git staging area:
-   ```bash
-   git add README.md
-Commit the file to your repository:
-
-bash
-Copy code
-git commit -m "Add README file with setup instructions"
-Push the changes to GitHub:
-
-bash
-Copy code
-git push origin main
